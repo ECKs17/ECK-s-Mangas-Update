@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ECK'sMangas</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="https://www.amazon.com.br/s?k=manga+shounen&__mk_pt_BR=ÅMÅŽÕÑ&crid=2OTWKSP859HIK&sprefix=manga+shounen%2Caps%2C180&ref=nb_sb_noss_1" class="lista-menu__link">Shounen</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="https://www.amazon.com.br/manga-de-terror/s?k=manga+de+terror" class="lista-menu__link">Terror</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="https://www.amazon.com.br/s?k=manga+de+comédia&rh=n%3A7842714011&__mk_pt_BR=ÅMÅŽÕÑ&ref=nb_sb_noss" class="lista-menu__link">Comédia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="https://www.amazon.com.br/s?k=manga+slice+of+life&__mk_pt_BR=ÅMÅŽÕÑ&crid=1NSCNN09W0C1O&sprefix=manga+slice+of+life%2Caps%2C178&ref=nb_sb_noss_1" class="lista-menu__link">Slice of Life</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="https://www.amazon.com.br/s?k=mangas+de+romance&rh=n%3A7842714011&__mk_pt_BR=ÅMÅŽÕÑ&ref=nb_sb_noss" class="lista-menu__link">Romance</a>
+        </li>
+      </ul>
+      <img src="img/ECK’s.png" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">ECKs</b>Mangas</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="https://www.amazon.com.br/s?k=manga+shounen&__mk_pt_BR=ÅMÅŽÕÑ&crid=2OTWKSP859HIK&sprefix=manga+shounen%2Caps%2C180&ref=nb_sb_noss_1" class="lista-menu__link">Shounen</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="https://www.amazon.com.br/manga-de-terror/s?k=manga+de+terror" class="lista-menu__link">Terror</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="https://www.amazon.com.br/s?k=manga+de+comédia&rh=n%3A7842714011&__mk_pt_BR=ÅMÅŽÕÑ&ref=nb_sb_noss" class="lista-menu__link">Comédia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="https://www.amazon.com.br/s?k=manga+slice+of+life&__mk_pt_BR=ÅMÅŽÕÑ&crid=1NSCNN09W0C1O&sprefix=manga+slice+of+life%2Caps%2C178&ref=nb_sb_noss_1" class="lista-menu__link">Slice of Life</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="https://www.amazon.com.br/s?k=mangas+de+romance&rh=n%3A7842714011&__mk_pt_BR=ÅMÅŽÕÑ&ref=nb_sb_noss" class="lista-menu__link">Romance</a>
+          </li>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha estante</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Estrela.png" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/carrinho.png" alt="Carrinhos de compras" class="container__imagem">
+        <p class="container__texto">Minha sacola</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Mergulhe na sua proxima aventura!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Todo mundo ama</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Guts.jpg"
+              alt="Acompanhe a jonarda de Guts no famoso mangá de Kentaro Miura"></div>
+          <div class="swiper-slide"><img src="img/OP.jpg"
+              alt="Pirata que estica de Ochiro Oda"></div>
+          <div class="swiper-slide"><img src="img/HxH.jpg" alt="Aventura do menino Gon, escrito por Yoshiro Togashi">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Narutin.jpg" alt="Livro do ninja mais atrapalhado e determinado de Konoha" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/DN.jpg" alt="Livro do caderno que carrega o poder de shinigami" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Yu gi oh.jfif" alt="Livro sobre o jogo de cartas mais antigo do milenio" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Full Metal Alchemist</h2>
+            <p class="descrição__texto">
+              Os irmãos Edward e Al Elric praticam o tabu da transmutação humana e pagam caro por isso. Edward perde um braço e uma perna e Al perde o corpo todo. Os dois crescem e decidem sair pelo mundo em busca de uma maneira de consertar o que fizeram.
+            </p>
+          </div>
+          <img src="img/FMA.jpg" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Estrela.png" alt="Favoritar livro" />
+            </li>
+            <li class="botões__item">
+              <img src="img/carrinho.png" alt="Adicionar no carrinho de compras" />
+            </li>
+          </ul>
+          <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiPvOOFxaqJAxVCr5UCHW41PW8QFnoECDgQAQ&url=https%3A%2F%2Fpt.wikipedia.org%2Fwiki%2FFullmetal_Alchemist&usg=AOvVaw15pneh6efspGo6u9LJcWXn&opi=89978449" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Escolhas do Dev</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/Tomie.jfif"
+              alt="O primeiro livro do mestre Junj Ito"></div>
+          <div class="swiper-slide"><img src="img/Zatch bell.jpg" alt="Livro do menino que solta raios pela boca">
+          </div>
+          <div class="swiper-slide"><img src="img/DBC.jpg" alt="Em homenagem á Akira Toriyama">
+          </div>
+          <div class="swiper-slide"><img src="img/1armyman.jpg" alt="Espadas, magia e vingança"></div>
+          <div class="swiper-slide"><img src="img/Jojo.jpg" alt="As aventuras mais bizarras escritas pelo louco Araki"></div>
+          <div class="swiper-slide"><img src="img/Bocchi.jpg" alt="Uma obra prima escrita pela autora Aki Hamaji"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1º linha -->
+        <div class="card__descrição">
+          <!-- 1º coluna -->
+          <div class="descrição">
+            <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+            <h3 class="descrição__titulo">Autora do Mês</h3>
+            <h2 class="descrição__titulo-livro">Aki Hamaji</h2>
+            <p class="descrição__texto">Aki Hamazi (はまじ あき Hamaji Aki, nascida em 17 de novembro) é uma mangaká japonês. Hamazi é conhecida por criar a série Bocchi the Rock!, que também foi adaptada para anime pela CloverWorks.
+            </p>
+          </div>
+          <!-- 2º coluna -->
+          <img src="img/BocchiAuthor.jpg" class="descrição__imagem">
+        </div>
+
+        <!-- 2º linha -->
+        <div class="card__botões">
+          <!-- 1º coluna -->
+          <ul class="botões">
+            <li class="botões__item"><img src="img/Estrela.png" alt="Favoritar livro"></li>
+            <li class="botões__item"><img src="img/carrinho.png" alt="Adicionar no carrinho de compras"></li>
+          </ul>
+          <!-- 2º coluna -->
+          <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi-4KjyxKqJAxWwr5UCHfyHIL4QFnoECFQQAQ&url=https%3A%2F%2Fbocchi-the-rock.fandom.com%2Fwiki%2FAki_Hamazi&usg=AOvVaw2VM_FdevIRm-9VKCsVR16a&opi=89978449" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Android</a></li>
+      <li class="tópicos__item">
+        <a href="https://www.amazon.com.br/s?k=mangas&rh=n%3A6740748011%2Cn%3A7842714011&dc&ds=v1%3AOrMK5Xs6eSTDjra%2FdJPO6CNb%2FD6OP9RU0UC733J1fq8&__mk_pt_BR=ÅMÅŽÕÑ&crid=18YBGTFC31FAQ&qid=1729894653&rnid=18726358011&sprefix=mangas%2Caps%2C176&ref=sr_nr_n_2" class="tópicos__link">Mangás</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://pipocaenanquim.com.br/autores/junji-ito.html?srsltid=AfmBOorsb9V37MC7QPljdtAKrxiIN0BXibyvVM2cLVqcCaR09yWhacgi" class="tópicos__link">Junji Ito</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://www.amazon.com.br/s?k=manga+shounen&__mk_pt_BR=ÅMÅŽÕÑ&crid=2OTWKSP859HIK&sprefix=manga+shounen%2Caps%2C180&ref=nb_sb_noss_1" class="tópicos__link">Shounen</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://www.amazon.com.br/s?k=manga+jojo&__mk_pt_BR=ÅMÅŽÕÑ&crid=1SUNK9H6R09ZJ&sprefix=manga+jojo%2Caps%2C189&ref=nb_sb_noss_1" class="tópicos__link">Araki</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://www.amazon.com.br/s?k=manga+slife+of+life&__mk_pt_BR=ÅMÅŽÕÑ&crid=1MJSEB5V9UTFQ&sprefix=manga+slife+of+life%2Caps%2C173&ref=nb_sb_noss" class="tópicos__link">Slice of Life</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://www.amazon.com.br/s?k=manga+de+aventura&__mk_pt_BR=ÅMÅŽÕÑ&crid=3M5JEDQGTM8BU&sprefix=manga+de+aventura%2Caps%2C195&ref=nb_sb_noss_1" class="tópicos__link">Aventura</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://www.amazon.com.br/manga-de-terror/s?k=manga+de+terror" class="tópicos__link">Terror</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi-4KjyxKqJAxWwr5UCHfyHIL4QFnoECFQQAQ&url=https%3A%2F%2Fbocchi-the-rock.fandom.com%2Fwiki%2FAki_Hamazi&usg=AOvVaw2VM_FdevIRm-9VKCsVR16a&opi=89978449" class="tópicos__link">Autora do mês</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+      <p class="contato__texto">
+        Atualizações de mangás, promoções e muito mais.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">ECK’s Mangás</h2>
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Terror</li>
+      <li class="lista-rodapé__item">
+        <img src="img/Kanako.jpg" alt="Logo da Tommie" />
+        <a href="#" class="lista-rodapé__link">Contos de Kanako</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Uzumaki.jpg" alt="Logo de Uzumaki" />
+        <a href="#" class="lista-rodapé__link">Uzumaki</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Romance</li>
+      <li class="lista-rodapé__item">
+        <img src="img/FB.jpg" alt="Logo de Berserk" />
+        <a href="#" class="lista-rodapé__link">Fruit Basket</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Horimiya.jpg" alt="Logo do Naruto" />
+        <a href="#" class="lista-rodapé__link">Horimiya</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/SWWRH.jpg" alt="Logo de Zatch Bell" />
+        <a href="#" class="lista-rodapé__link">Snow White With Red Hair</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Last Game.jpg" alt="Logo da Full Metal" />
+        <a href="#" class="lista-rodapé__link">Last Game</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MLH.jpg" alt="Logo da Kagurabachi" />
+        <a href="#" class="lista-rodapé__link">My Love History</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/MLHWYLV999.jpg" alt="Logo de HxH" />
+        <a href="#" class="lista-rodapé__link">My Love History With Yamada At Lv999</a>
+      </li>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Não citados</li>
+      <li class="lista-rodapé__item">
+        <img src="img/ReZero.jpg" alt="Logo de ReZero" />
+        <a href="#" class="lista-rodapé__link">Re:Zero</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Frankenstein.jpg" alt="Logo do Frankenstein" />
+        <a href="#" class="lista-rodapé__link">Frankenstein</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/kimi ni.jpg" alt="Logo do Kimi ni Todoke" />
+        <a href="#" class="lista-rodapé__link">Kimi ni Todoke</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Konosuba.jpg" alt="Logo de Konosuba" />
+        <a href="#" class="lista-rodapé__link">Konosuba</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Tokyo G.jpg" alt="Logo de Tokyo Ghoul" />
+        <a href="#" class="lista-rodapé__link">Tokyo Ghoul</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/Tokyo R.jpg" alt="Logo de Tokyo Revengers" />
+        <a href="#" class="lista-rodapé__link">Tokyo Revengers</a>
+      </li>
+      <li class="lista-rodapé__item">
+        <img src="img/7ds.jpg" alt="Logo do 7DS" />
+        <a href="#" class="lista-rodapé__link">7DS</a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
